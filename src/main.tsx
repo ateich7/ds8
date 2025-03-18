@@ -10,9 +10,10 @@ import Login from './Login.tsx'
 import Logskel from './LogSkel.tsx'
 import Acord from './Acord.tsx'
 import Dropdown from './DropDown.tsx'
+import Inp from './Inp.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Dropdown />
+    <Inp />
   </StrictMode>,
 )
