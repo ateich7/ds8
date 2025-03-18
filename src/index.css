@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --navy-100: #e7ebee;
+  --navy-200: #d0d6de;
+  --navy-300: #a0adbc;
+  --navy-400: #71859b;
+  --navy-500: #415c79;
+  --navy-600: #123358;
+  --navy-700: #0d2642;
+  --navy-800: #09192c;
+  --teal-50: #f2fbfb;
+  --teal-100: #e5f6f7;
+  --teal-200: #cceeee;
+  --teal-300: #99dcde;
+  --teal-400: #66cbcd;
+  --teal-500: #33b9bd;
+  --teal-600: #00a8ac;
+  --teal-700: #007e81;
+  --teal-800: #005456;
+  --rust-50: #fdf6f5;
+  --rust-100: #fbedeb;
+  --rust-200: #f7dbd6;
+  --rust-300: #efb6ad;
+  --rust-400: #e69285;
+  --rust-500: #de6d5c;
+  --rust-600: #d64933;
+  --rust-700: #a13726;
+  --rust-800: #6b2419;
+  --black-50: #fafafa;
+  --black-100: #f4f4f4;
+  --black-200: #dddddd;
+  --black-300: #c6c6c6;
+  --black-400: #a3a3a3;
+  --black-500: #818181;
+  --black-600: #5f5f5f;
+  --black-700: #3c3c3c;
+  --black-800: #1a1a1a;
+  --green-50: #f6fbf7;
+  --green-100: #ecf7f0;
+  --green-200: #daefe1;
+  --green-300: #b4dfc3;
+  --green-400: #8fcfa5;
+  --green-500: #69bf87;
+  --green-600: #44af69;
+  --green-700: #33834f;
+  --green-800: #225735;
+  --red-50: #fef6f5;
+  --red-100: #feeceb;
+  --red-200: #fdd9d7;
+  --red-300: #fbb4af;
+  --red-400: #f88e86;
+  --red-500: #f6695e;
+  --red-600: #f44336;
+  --red-700: #b73228;
+  --red-800: #7a211b;
+  --yellow-50: #fffcf2;
+  --yellow-100: #fef9e5;
+  --yellow-200: #fdf3cc;
+  --yellow-300: #fbe799;
+  --yellow-400: #f9dc66;
+  --yellow-500: #f7d033;
+  --yellow-600: #f5c400;
+  --yellow-700: #b89300;
+  --yellow-800: #7b6200;
+  --blue-50: #f4f9ff;
+  --blue-100: #e8f4ff;
+  --blue-200: #d2e9ff;
+  --blue-300: #a5d3ff;
+  --blue-400: #78bcff;
+  --blue-500: #4ba6ff;
+  --blue-600: #1e90ff;
+  --blue-700: #166cbf;
+  --blue-800: #0f4880;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #123358;
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 8px;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  --color-success-600: var(--green-600);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--navy-600);
+  --color-primaryd: var(--navy-700);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--navy-600);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--rust-200);
+  --color-accent-foreground: var(--rust-600);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-disabled: var(--black-200);
+  --color-disabledfore: var(--black-400);
+  --color-text-success: var( --color-success-600);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@layer base {
+  :root {
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
